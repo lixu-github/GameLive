@@ -25,7 +25,7 @@
 //默认版本，编码
 - (instancetype)initWithRoot:(Node *)root
 {
-    return [self initWithVersion:@"1.0" encoding:@"UTF-8" root:root];
+    return [self initWithVersion:@"1.0.1" encoding:@"UTF-8" root:root];
 }
 
 //XML文档转换为字符串
