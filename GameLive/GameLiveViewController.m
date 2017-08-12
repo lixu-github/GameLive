@@ -7,7 +7,7 @@
 //
 
 #import "GameLiveViewController.h"
-#import <React/RCTRootView.h>
+
 
 @interface GameLiveViewController ()
 
