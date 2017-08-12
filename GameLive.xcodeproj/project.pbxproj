@@ -12,6 +12,8 @@
 		A6F088B91F3C965A00BC2201 /* XMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F088B21F3C965A00BC2201 /* XMLDocument.m */; };
 		A6F088BA1F3C965A00BC2201 /* XMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F088B41F3C965A00BC2201 /* XMLNode.m */; };
 		A6F088BB1F3C965A00BC2201 /* XMLPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F088B61F3C965A00BC2201 /* XMLPropertyNode.m */; };
+		A6F088C01F3DE71F00BC2201 /* GameLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F088BF1F3DE71F00BC2201 /* GameLiveViewController.m */; };
+		A6F088C31F3DF16300BC2201 /* TSMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F088C21F3DF16300BC2201 /* TSMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,10 @@
 		A6F088B41F3C965A00BC2201 /* XMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLNode.m; sourceTree = "<group>"; };
 		A6F088B51F3C965A00BC2201 /* XMLPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLPropertyNode.h; sourceTree = "<group>"; };
 		A6F088B61F3C965A00BC2201 /* XMLPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLPropertyNode.m; sourceTree = "<group>"; };
+		A6F088BE1F3DE71F00BC2201 /* GameLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLiveViewController.h; sourceTree = "<group>"; };
+		A6F088BF1F3DE71F00BC2201 /* GameLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLiveViewController.m; sourceTree = "<group>"; };
+		A6F088C11F3DF16300BC2201 /* TSMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMethod.h; sourceTree = "<group>"; };
+		A6F088C21F3DF16300BC2201 /* TSMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 		A6F088A31F3C961000BC2201 /* GameLive */ = {
 			isa = PBXGroup;
 			children = (
+				A6F088C11F3DF16300BC2201 /* TSMethod.h */,
+				A6F088C21F3DF16300BC2201 /* TSMethod.m */,
 				A6F088AD1F3C965A00BC2201 /* Document.h */,
 				A6F088AE1F3C965A00BC2201 /* Document.m */,
 				A6F088AF1F3C965A00BC2201 /* Node.h */,
@@ -80,6 +88,8 @@
 				A6F088B41F3C965A00BC2201 /* XMLNode.m */,
 				A6F088B51F3C965A00BC2201 /* XMLPropertyNode.h */,
 				A6F088B61F3C965A00BC2201 /* XMLPropertyNode.m */,
+				A6F088BE1F3DE71F00BC2201 /* GameLiveViewController.h */,
+				A6F088BF1F3DE71F00BC2201 /* GameLiveViewController.m */,
 			);
 			path = GameLive;
 			sourceTree = "<group>";
@@ -144,7 +154,9 @@
 				A6F088B71F3C965A00BC2201 /* Document.m in Sources */,
 				A6F088BB1F3C965A00BC2201 /* XMLPropertyNode.m in Sources */,
 				A6F088B91F3C965A00BC2201 /* XMLDocument.m in Sources */,
+				A6F088C31F3DF16300BC2201 /* TSMethod.m in Sources */,
 				A6F088B81F3C965A00BC2201 /* Node.m in Sources */,
+				A6F088C01F3DE71F00BC2201 /* GameLiveViewController.m in Sources */,
 				A6F088BA1F3C965A00BC2201 /* XMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +255,7 @@
 		A6F088AB1F3C961000BC2201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../RNApp/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -252,6 +265,7 @@
 		A6F088AC1F3C961000BC2201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../RNApp/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +291,7 @@
 				A6F088AC1F3C961000BC2201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
