@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GameLive" # 项目名称
-s.version      = "0.0.10"
+s.version      = "0.0.11"
   s.license      = { :type => "MIT", :file => "LICENSE" }      # 开源证书
   s.summary      = "私人pod代码" # 项目简介
 
@@ -11,9 +11,9 @@ s.version      = "0.0.10"
   s.public_header_files = 'GameLive/*.h'
   s.platform     = :ios, "8.0" #平台及支持的最低版本
   # s.frameworks   = "UIKit", "Foundation" #支持的框架
-  s.dependency   = "React" # 依赖库
-
+  s.dependency   = { 'AFJSONRPCClient' => [] }
   # User
+
   s.author             = { "lixu" => "lixu.dennislee@gmail.com" } # 作者信息
   s.social_media_url   = "http://github.com/lixu-github" # 个人主页
 
